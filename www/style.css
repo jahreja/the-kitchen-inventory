@@ -11,42 +11,20 @@ body{
     min-height: 100vh;
 }
 
-header{
-    font-size: 1.5rem;
+.top-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
 }
 
-.in-cupboard{
-    margin: 0.5rem;
-
-    color: white;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 20rem;
-    position: absolute;
-    left: 26rem;
-    transition: all 0.5s ease;
-}
-
-
-
-.in-shopping{
-    margin: 0.5rem;
-    color: white;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 20rem;
-    position: absolute;
-    left: 80rem;
-    transition: all 0.5s ease;
+header {
+    padding-top: 10vh;
 }
 
 header,
 form {
-    min-height: 15vh;
+    min-height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,8 +38,6 @@ form button {
     background: white;
 }
 
-
-
 form button {
     color: #4596f1;
     background: white;
@@ -74,37 +50,28 @@ form button:hover {
     color: white;
 }
 
-.kitchen-container {
-    display: flex;
-    position: absolute;
-    margin-top: 8rem;
-    left: 20rem;
-    justify-content: left;
-    align-items: left;
 
+/*//////////////////*/
+
+
+.lists {
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
-.kitchen-list {
-    min-width: 30rem;
+.shopping-list, .kitchen-list {
+    min-width: 40vw;
+    padding-left: 10%;
+    padding-right: 10%;
     list-style: none;
 }
 
-.shopping-container {
-    display: flex;
-    position: absolute;
-    left: 70rem;
-    margin-top: 8rem;
-    justify-content: left;
-    align-items: left;
-
+.kitchen li, .shopping li {
+    flex: 1;
 }
 
-.shopping-list {
-    min-width: 30rem;
-    list-style: none;
-}
-
-.kitchen {
+.shopping, .kitchen {
     margin: 0.5rem;
     background: white;
     color: black;
@@ -113,25 +80,6 @@ form button:hover {
     justify-content: space-between;
     align-items: center;
     transition: all 0.5s ease;
-}
-
-.kitchen li {
-    flex: 1;
-}
-
-.shopping {
-    margin: 0.5rem;
-    background: white;
-    color: black;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 0.5s ease;
-}
-
-.shopping li {
-    flex: 1;
 }
 
 .complete-btn,
@@ -148,12 +96,7 @@ form button:hover {
     background-color: #1a7543;
 }
 
-.kitchen-item {
-    padding: 0rem 0.5rem;
-    text-transform: capitalize;
-}
-
-.shopping-item {
+.kitchen-item, .shopping-item {
     padding: 0rem 0.5rem;
     text-transform: capitalize;
 }
@@ -173,4 +116,3 @@ form button:hover {
     transform: translateX(-8rem);
     opacity: 0;
 }
-
